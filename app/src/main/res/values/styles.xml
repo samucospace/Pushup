@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:popupBackground">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/button_color</item>
+        <item name="actionOverflowMenuStyle">@style/MyPopupMenu</item>
+    </style>
+
+    <style name="bodyText" parent="@android:style/Widget.EditText">
+        <item name="android:textColorPrimary">@color/colorTextSecondary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:textColorHint">@color/colorTextSecondary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyPopupMenu">
+        <item name="android:actionBarItemBackground">@color/colorPrimary</item>
+        <item name="android:actionBarDivider">@color/colorTextPrimary</item>
+
+    </style>
+<!--
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark" >
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:popupBackground">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/button_color</item>
+        <item name="actionOverflowMenuStyle">@style/MyPopupMenu</item>
+
+        </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
+    <item name="android:popupBackground">@color/colorPrimary</item></style>
+-->
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pushup</string>
+    <string name="first_test_prompt">It\'s time for an exhaustion test.\n\nHow many pushups can you do in a row now?</string>
+    <string name="second_test_prompt">It\'s time for another exhaustion test.\n\nHow many pushups can you do in a row now?</string>
+    <string name="start_prompt">We need to work out where to start.\n\nHow many pushups can you do in a row?</string>
+    <string name="round_text">Round</string>
+
+</resources>

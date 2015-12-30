@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    tools:context="com.hokkaidoprojects.pushup.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+        android:elevation="4dp"/>
+
+    <TableLayout
+        android:id="@+id/grid"
+        android:layout_below="@id/my_toolbar"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:columnCount="3"
+    android:stretchColumns="0,1,2"
+    android:shrinkColumns="0,1,2">
+        <!--remove  the layout below and centre the whole layout-->
+
+    <TableRow>
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:paddingTop="50dp"
+        >
+    <TextView
+        android:id="@+id/levelText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Level"
+        android:textSize="32dp"
+        style="@style/bodyText"/>
+
+    <TextView
+        android:id="@+id/levelNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="1"
+        android:textSize="32dp"
+        style="@style/bodyText"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:paddingTop="50dp"
+        >
+        <TextView
+            android:id="@+id/weekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Week"
+            android:textSize="32dp"
+            style="@style/bodyText"/>
+
+        <TextView
+            android:id="@+id/weekNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="1"
+            android:textSize="32dp"
+            style="@style/bodyText"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:paddingTop="50dp"
+        >
+        <TextView
+            android:id="@+id/dayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Day"
+            android:textSize="32dp"
+            style="@style/bodyText"/>
+
+        <TextView
+            android:id="@+id/dayNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="1"
+            android:textSize="32dp"
+            style="@style/bodyText"/>
+
+    </LinearLayout>
+    </TableRow>
+
+
+</TableLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/roundLayout"
+    android:paddingTop="50dp"
+    android:layout_gravity="fill"
+    android:layout_below="@id/grid">
+
+    <TextView
+        android:id="@+id/roundText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/round_text"
+        android:textSize="32dp"
+        style="@style/bodyText"/>
+
+    <TextView
+        android:id="@+id/roundNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="1"
+        android:textSize="32dp"
+        style="@style/bodyText"/>
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="fill"
+    android:paddingTop="50dp"
+    android:layout_below="@+id/roundLayout">
+
+    <TextView
+        android:id="@+id/pushupText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Goal"
+        android:textSize="32dp"
+        style="@style/bodyText"/>
+
+    <TextView
+        android:id="@+id/pushupNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="1"
+        android:textSize="32dp"
+        style="@style/bodyText"/>
+
+</LinearLayout>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Finished!"
+    android:id="@+id/finishedButton"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="38dp"
+    android:minWidth="160dp" />
+
+
+</RelativeLayout>

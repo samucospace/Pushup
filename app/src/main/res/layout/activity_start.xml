@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_vertical"
+    tools:context="com.hokkaidoprojects.pushup.StartActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dip"
+        android:paddingLeft="30dip"
+        android:text="@string/start_prompt"
+        android:id="@+id/startTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        style="@style/bodyText"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/startTextView"
+        android:layout_marginTop="41dp">
+
+    <EditText
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:inputType="number"
+        android:id="@+id/numberEditText"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/square_background"
+        android:hint="\?"
+        style="@style/bodyText"/>
+    <Space
+        android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:id="@+id/startSpace"
+        android:layout_toRightOf="@+id/numberEditText"
+        android:layout_toEndOf="@+id/numberEditText"/>
+    <Button
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:text="Go"
+        android:textSize="30sp"
+        android:id="@+id/goButton"
+        android:background="@drawable/square_background_button"
+        android:layout_toRightOf="@+id/startSpace"
+        android:layout_toEndOf="@+id/startSpace" />
+
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>
